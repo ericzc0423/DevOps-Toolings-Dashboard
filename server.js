@@ -31,7 +31,8 @@ app.post('/endpoint', function(req, res){
 	console.log(req.body);      // your JSON
    res.send(req.body);    // echo the result back
 let obj1=req.body;
-	fs.writeFileSync('./JSON/data.json', JSON.stringify(obj1))
+	fname=obj1.ShortName
+	fs.writeFileSync(`JSON/${fname}.json`, JSON.stringify(obj1))
 });
 
 /*

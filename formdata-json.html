@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html>
-	<!--
-<frameset cols="25%,*,25%" >
-	<frame src="http://35.246.180.255:3000/ansible-ping">
-	  <iframe src="">
-</frameset>
-	-->
 <head>
 <title>Send HTML Form as JSON</title>
 <style>
@@ -163,4 +157,43 @@ DevNetOps Toolings
 	<span class="elements">Press "Ctrl + Shift + J" to see sent JSON in console: <span>
   </fieldset>
 </form>
+<footer class="page-footer font-small mdb-color darken-3 pt-4">
+
+  <!-- Footer Elements -->
+  <p> Out of ansible-ping 
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+
+      <!--Grid column-->
+      <div class="col-md-6">
+
+        <!-- Video -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe class="embed-responsive-item" src="http://35.246.180.255:3000/ansible-ping"
+            id="myIframe" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+<script>
+window.setInterval("reloadIFrame();", 10000);
+function reloadIFrame() {
+ document.getElementById("myIframe").src="http://35.246.180.255:3000/ansible-ping";
+}
+</script>
+</footer>
 </body>
